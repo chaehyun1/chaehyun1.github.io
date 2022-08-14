@@ -1,7 +1,7 @@
 ---
 title: "Bayesian Statistics"
 layout: archive
-permalink: categories/bayesian-stat
+permalink: categories/bayesian
 author_profile: true
 sidebar_main: true
 ---
