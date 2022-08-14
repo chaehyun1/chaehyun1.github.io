@@ -23,6 +23,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "bayescoding" %}
+                        <li><a href="/categories/bayes-coding" class="">Bayesian Stat Coding ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             
       </li>
   </ul>
