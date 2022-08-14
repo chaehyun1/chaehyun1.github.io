@@ -10,6 +10,30 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  
+  
+  
+docs:
+  - title: Statistics
+    children:
+      - title: "Bayesian Stat"
+        url: bayes/
+        category: "bayes"
+      - title: "Time Series Analysis"
+        url: tsa/
+        category: "time series analysis"
 
+  - title: Coding
+    children:
+      - title: "Self Study"
+        url: study/
+        category: "coding study"
+
+  
+  - title: Etc
+    children:
+      - title: "Blog"
+        url: blog/
+        category: "blog"
 
   
