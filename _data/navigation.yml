@@ -20,19 +20,19 @@ docs:
         url: bayes/
         category: "bayes"
       - title: "Time Series Analysis"
-        url: tsa/
-        category: "time series analysis"
+        url: time/
+        category: "time"
 
   - title: Coding
     children:
       - title: "Self Study"
-        url: study/
-        category: "coding study"
+        url: codingstudy/
+        category: "codingstudy"
 
   
   - title: Etc
     children:
-      - title: "Blog"
+      - title: "How to build blog"
         url: blog/
         category: "blog"
 
