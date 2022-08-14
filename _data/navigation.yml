@@ -13,27 +13,5 @@
   
   
   
-docs:
-  - title: Statistics
-    children:
-      - title: "Bayesian Stat"
-        url: bayes/
-        category: "bayes"
-      - title: "Time Series Analysis"
-        url: time/
-        category: "time"
-
-  - title: Coding
-    children:
-      - title: "Self Study"
-        url: codingstudy/
-        category: "codingstudy"
-
-  
-  - title: Etc
-    children:
-      - title: "How to build blog"
-        url: blog/
-        category: "blog"
 
   
