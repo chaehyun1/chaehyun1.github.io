@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: "https://chaehyun1.github.io"
   - title: "Category"
-    url: /categories/
+    url: "https://chaehyun1.github.io/categories/"
   #- title: "Quick-Start Guide"
     #url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
