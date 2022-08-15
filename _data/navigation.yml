@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Home"
+    url: "https://chaehyun1.github.io"
   - title: "Category"
     url: /categories/
   #- title: "Quick-Start Guide"
