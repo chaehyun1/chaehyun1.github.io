@@ -140,8 +140,7 @@ sgd_clf.fit(X_train, y_train_5)
 ```py
 sgd_clf.predict([some_digit])
 ```
-> array([ True])  
-<br>
+결과: array([ True])  
 - 숫자 5의 이미지를 감지해보기
 - 모델을 통해 X[0]이 5인지 예측해보면, 맞음(True)
 
