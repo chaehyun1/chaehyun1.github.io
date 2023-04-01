@@ -26,11 +26,20 @@
             
         <span class="nav__sub-title">Coding</span>
         
-        <span class="nav__sub-title">자격증 공부</span>
+        <span class="nav__sub-title">데이터베이스</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "SQL" %}
                         <li><a href="/categories/SQL" class="">SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            
+        <span class="nav__sub-title">ML</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ML" %}
+                        <li><a href="/categories/ML" class="">ML ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
