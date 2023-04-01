@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "Record"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Chaehyun Kim"
+name                     : "ChaeHyun Kim"
 description              : "Record about my study"
 url                      : "https://chaehyun1.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chaeyun Kim"
+  name             : "ChaeHyun Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Beginner -> ?"
   location         : "Yonsei.Univ"
