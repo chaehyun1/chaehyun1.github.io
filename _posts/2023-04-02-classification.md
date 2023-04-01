@@ -19,7 +19,7 @@ from sklearn.datasets import fetch_openml
 mnist = fetch_openml('mnist_784', version=1, as_frame=False)
 mnist.keys()
 ```
-> dict_keys(['data', 'target', 'frame', 'categories', 'feature_names', 'target_names', 'DESCR', 'details', 'url'])    
+결과: dict_keys(['data', 'target', 'frame', 'categories', 'feature_names', 'target_names', 'DESCR', 'details', 'url'])  
 
 - 딕셔너리 구조
     - DESCR: 데이터셋을 설명하는 키
@@ -33,9 +33,9 @@ X, y = mnist["data"], mnist["target"]
 print(X.shape)
 print(y.shape)
 ```
-> (70000, 784)  
-> (70000,)  
-<br>
+결과: (70000, 784)  
+결과: (70000,)  
+
 - 70000개의 이미지가 있다.
 - 각 이미지는 28 x 28 =784개의 특성이 있다. (28 x 28 픽셀)
 - 개개의 특성은 0(흰색)부터 255(검은색)까지의 픽셀 강도를 나타낸다.  
@@ -66,8 +66,7 @@ plt.show()
 ```py
 y[0]
 ```
-> ‘5’  
-<br>
+결과: ‘5’  
 - y = mnist["target"]
 - 위의 그림이 5로 보이기는 한데… 진짜 5일까? → 확인해야 함
 - 따라서 y[0]을 실행한 결과 ‘5’가 맞다.
@@ -79,8 +78,7 @@ y[0]
 y = y.astype(np.uint8)
 y[0]
 ```
-> 5  
-
+결과: 5  
 - 정수형으로 바꼈다. astype() 사용
 - 대부분 머신러닝 알고리즘은 숫자를 사용한다.
 
@@ -181,10 +179,9 @@ for train_index, test_index in skfolds.split(X_train, y_train_5):
     n_correct = sum(y_pred == y_test_fold) #올바른 예측 수 세기
     print(n_correct / len(y_pred)) #평균, 정확한 예측 비율 출력
 ```
-> 0.9669  
-> 0.91625  
-> 0.96785  
-
+결과: 0.9669  
+결과: 0.91625  
+결과: 0.96785  
 - StratifiedKFold 사용
 - 분류에서 성능 측정 지표로 자주 쓴다.
 - KFold를 보완한 것이다.
@@ -202,8 +199,7 @@ for train_index, test_index in skfolds.split(X_train, y_train_5):
 from sklearn.model_selection import cross_val_score
 cross_val_score(sgd_clf, X_train, y_train_5, cv = 3, scoring = 'accuracy')
 ```
-> array([0.95035, 0.96035, 0.9604 ])  
-<br>
+결과: array([0.95035, 0.96035, 0.9604])  
 - KFold를 사용해도 결과는 비슷하다.
 
 <br>
@@ -220,8 +216,7 @@ class Never5Classifier(BaseEstimator): #나만의 변환기 생성
 never_5_clf = Never5Classifier()
 cross_val_score(never_5_clf, X_train, y_train_5, cv=3, scoring="accuracy")
 ```
-> array([0.91125, 0.90855, 0.90915])  
-
+결과: array([0.91125, 0.90855, 0.90915])  
 - **모든 이미지를 ‘5 아님’ 클래스로 분류**하는 더미 분류기 생성
 - 나만의 변환기 만들기!!
 - BaseEstimator: 파이프라인과 그리드 탐색에 필요한 _get_params()과 set_params() 메서드를 사용할 수 있도록 지원한다.
