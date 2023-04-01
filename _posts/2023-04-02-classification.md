@@ -35,7 +35,7 @@ print(y.shape)
 ```
 > (70000, 784)  
 > (70000,)  
-
+<br>
 - 70000개의 이미지가 있다.
 - 각 이미지는 28 x 28 =784개의 특성이 있다. (28 x 28 픽셀)
 - 개개의 특성은 0(흰색)부터 255(검은색)까지의 픽셀 강도를 나타낸다.  
@@ -67,7 +67,7 @@ plt.show()
 y[0]
 ```
 > ‘5’  
-
+<br>
 - y = mnist["target"]
 - 위의 그림이 5로 보이기는 한데… 진짜 5일까? → 확인해야 함
 - 따라서 y[0]을 실행한 결과 ‘5’가 맞다.
@@ -143,7 +143,7 @@ sgd_clf.fit(X_train, y_train_5)
 sgd_clf.predict([some_digit])
 ```
 > array([ True])  
-
+<br>
 - 숫자 5의 이미지를 감지해보기
 - 모델을 통해 X[0]이 5인지 예측해보면, 맞음(True)
 
@@ -203,7 +203,7 @@ from sklearn.model_selection import cross_val_score
 cross_val_score(sgd_clf, X_train, y_train_5, cv = 3, scoring = 'accuracy')
 ```
 > array([0.95035, 0.96035, 0.9604 ])  
-
+<br>
 - KFold를 사용해도 결과는 비슷하다.
 
 <br>
